@@ -1,27 +1,11 @@
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js">
-    </script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython_stdlib.js">
-    </script>
-    
-</head>
-
-<body onload="brython()">
-
-<script type="text/python">
-<div id="container"></div>
-from browser import document
-
-import Attend
-
-    </script>
-<a href="/Attend.py">Visit W3Schools.com!</a>
-
-</body>
-
+    <head>
+        <title>Running a Python script</title>
+        <?PHP
+        echo shell_exec("Attend.py");
+        ?>
+        </head>
+    <body>
+        <!-- BODY -->
+    </body>
 </html>
