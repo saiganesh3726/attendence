@@ -6,12 +6,10 @@
         ?>
         </head>
     <body>
-        <?php 
-
-$command = escapeshellcmd('attendence/Attend.py');
-$output = shell_exec($command);
-echo $output;
-
-?>
+        <?php
+   $command_exec = escapeshellcmd('path-to-.py-file');
+   $str_output = shell_exec($command_exec);
+   echo $str_output;
+        ?>
     </body>
 </html>
