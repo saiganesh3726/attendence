@@ -13,11 +13,8 @@
 <body onload="brython()">
 
 <script type="text/python">
-from browser import document
-
-document.attach("Hello !")
-    </script>
-
+for button in document.select("td"):
+    button.bind("click", action)
 
 </body>
 
