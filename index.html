@@ -1,15 +1,24 @@
 <html>
-    <head>
-        <title>Running a Python script</title>
-        <?PHP
-        echo shell_exec("Attend.py");
-        ?>
-        </head>
-    <body>
-        <?php
-   $command_exec = escapeshellcmd('/Attend.py');
-   $str_output = shell_exec($command_exec);
-   echo $str_output;
-        ?>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython_stdlib.js">
+    </script>
+</head>
+
+<body onload="brython()">
+
+<script type="text/python">
+from browser import document
+
+document.attach("Hello !")
+    </script>
+
+
+</body>
+
 </html>
